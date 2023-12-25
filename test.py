@@ -1,27 +1,14 @@
-n = int(input())
+def menu():
+    """Hiển thị menu chức năng."""
+    print("-" * 30)
+    print("CHƯƠNG TRÌNH QUẢN LÝ SẢN PHẨM")
+    print("-" * 30)
+    print("1. Nhập thông tin sản phẩm")
+    print("2. Xem danh sách sản phẩm")
+    print("3. Sắp xếp theo tổng tiền giảm dần")
+    print("4. Lưu danh sách sản phẩm")
+    print("5. Thoát chương trình")
+    print("-" * 30)
 
-def hoan_hao(n):
- 
-    if n <=0:
-        return False
-        print('vui lòng nhập số dương')
-    tong = 0
-    for i in range(1,n):
-        if n % i ==0:
-            tong +=i
-    if tong == n:
-            return True
-    else:
-        return False
     
-def gan_nhat(n):
-    if hoan_hao(n):
-        return n
-    m = n + 1
-    while True:
-        if hoan_hao(m) and m - n > 100:
-            return m
-        m += 1
-
-result = gan_nhat(n)
-print(gan_nhat(n))
+menu()

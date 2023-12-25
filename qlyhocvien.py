@@ -16,6 +16,8 @@ def in_bang_du_lieu(danh_sach_2d):
 
 # In bảng dữ liệu
 in_bang_du_lieu(data)
+sap_xep=data[0]+sorted(data[1:], key= lambda x: x[6])[::-1]#sắp xếp dữ liệu
+
 f.seek(0)
 writer = csv.writer(f,delimiter=';',lineterminator='\n')
 writer.writerows(data)

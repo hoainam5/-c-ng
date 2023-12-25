@@ -10,3 +10,4 @@ def snt(n):
 for i in range(101):
     if snt(100)[i]== True:
         print(i)
+
